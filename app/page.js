@@ -1,26 +1,23 @@
 import Link from "next/link";
-import swagPhotos from "../photos";
-import Image from "next/image";
 
 export default function Home() {
-  const photos = swagPhotos;
-
   return (
-    <main className="container mx-auto">
-      <h1 className="text-center text-4xl font-bold m-10">NextGram</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 auto-rows-max	 gap-6 m-10">
-        {photos.map(({ id, imageSrc }) => (
-          <Link key={id} href={`/photos/${id}`}>
-            <Image
-              alt=""
-              src={imageSrc}
-              height={500}
-              width={500}
-              className="w-full object-cover aspect-square"
-            />
-          </Link>
-        ))}
-      </div>
-    </main>
+    <div className="h-[200px] bg-green-600 overflow-auto">
+      List of topics: <br />
+      <Link href="/topic/topic-a">Topic A</Link> <br />
+      <Link href="/topic/topic-b">Topic B</Link> <br />
+      <Link href="/topic/topic-c">Topic c</Link> <br />
+      <Link href="/topic/topic-d">Topic d</Link> <br />
+      <Link href="/topic/topic-e">Topic e</Link> <br />
+      <Link href="/topic/topic-f">Topic f</Link> <br />
+      <Link href="/topic/topic-g">Topic g</Link> <br />
+      <Link href="/topic/topic-h">Topic h</Link> <br />
+      <Link href="/topic/topic-i">Topic i</Link> <br />
+      <Link href="/topic/topic-l">Topic l</Link> <br />
+      <Link href="/topic/topic-m">Topic m</Link> <br />
+      <Link href="/topic/topic-n">Topic n</Link> <br />
+      <Link href="/topic/topic-o">Topic o</Link> <br />
+      <Link href="/topic/topic-p">Topic p</Link> <br />
+    </div>
   );
 }

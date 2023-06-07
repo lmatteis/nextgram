@@ -1,5 +1,4 @@
 import "./global.css";
-import GithubCorner from "../components/github-corner";
 
 export const metadata = {
   title: "NextGram",
@@ -11,11 +10,7 @@ export const metadata = {
 export default function Layout(props) {
   return (
     <html>
-      <body>
-        <GithubCorner />
-        {props.children}
-        {props.modal}
-      </body>
+      <body>{props.children}</body>
     </html>
   );
 }

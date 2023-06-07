@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ArticleModal(props) {
   return (
     <>
-      Modal Intercepted: Topic: {props.params.topicSlug} - Article:{" "}
+      @articleModal: Topic: {props.params.topicSlug} - Article:{" "}
       {props.params.articleId}
       <br />
       <Link href={`/topic/${props.params.topicSlug}/article/3`}>

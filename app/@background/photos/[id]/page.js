@@ -1,6 +1,6 @@
 import React from "react";
-import Photo from "../../../components/frame";
-import swagPhotos from "../../../photos";
+import Photo from "../../../../components/frame";
+import swagPhotos from "../../../../photos";
 
 export default function PhotoPage({ params: { id } }) {
   const photo = swagPhotos.find((p) => p.id === id);

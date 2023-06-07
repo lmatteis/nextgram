@@ -13,7 +13,7 @@ export default function Layout(props) {
     <html>
       <body>
         <GithubCorner />
-        {props.children}
+        {props.background}
         {props.modal}
       </body>
     </html>

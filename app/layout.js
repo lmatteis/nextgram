@@ -10,7 +10,11 @@ export const metadata = {
 export default function Layout(props) {
   return (
     <html>
-      <body>{props.children}</body>
+      <body>
+        {props.articles}
+        {props.topics}
+        {props.articleModal}
+      </body>
     </html>
   );
 }

@@ -18,6 +18,9 @@ export default function Home() {
       <Link href="/topic/topic-n">Topic n</Link> <br />
       <Link href="/topic/topic-o">Topic o</Link> <br />
       <Link href="/topic/topic-p">Topic p</Link> <br />
+      List of articles: <br />
+      <Link href="/article/1">Article 1</Link> <br />
+      <Link href="/article/2">Article 2</Link> <br />
     </div>
   );
 }

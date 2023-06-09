@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CloseModal } from "../../../../../../components/CloseModal";
 
 export default function ArticleModal(props) {
   return (
@@ -12,7 +13,7 @@ export default function ArticleModal(props) {
       <br />
       <Link href={`/topic/foo/article/4`}>Go to article 4, but topic foo</Link>
       <br />
-      <Link href={`/topic/${props.params.topicSlug}`}>Click here to close</Link>
+      <CloseModal>Click here to close</CloseModal>
     </>
   );
 }

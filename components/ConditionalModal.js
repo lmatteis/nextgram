@@ -1,10 +1,10 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { useUrlEntryModal } from "../hooks/useUrlEntryModal";
 
 export function ConditionalModal(props) {
-  const pathname = usePathname();
-  const shouldShowModal = pathname.includes("/article/");
+  const { isInModal } = useUrlEntryModal();
 
-  return shouldShowModal && props.children;
+  return isInModal && props.children;
 }

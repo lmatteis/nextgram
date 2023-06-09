@@ -1,4 +1,5 @@
 import "./global.css";
+import { ConditionalModal } from "../components/ConditionalModal";
 
 export const metadata = {
   title: "NextGram",
@@ -10,7 +11,10 @@ export const metadata = {
 export default function Layout(props) {
   return (
     <html>
-      <body>{props.children}</body>
+      <body>
+        {props.children}
+        <ConditionalModal>{props.articleModal}</ConditionalModal>
+      </body>
     </html>
   );
 }

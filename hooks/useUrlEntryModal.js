@@ -1,16 +1,17 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { urlEntryModalAtom } from "../store/modal";
-import { useAtom } from "jotai";
 import { useEffect } from "react";
+import { useEntryModalState } from "./useEntryModalState";
 
 export const useUrlEntryModal = () => {
   const pathname = usePathname();
 
-  const [urlEntryModal, setUrlEntryModal] = useAtom(urlEntryModalAtom);
+  const { setUrlEntryModal } = useEntryModalState();
 
-  const isInModal = pathname.includes("/article/");
+  const isArticle = pathname.includes("/article/");
+  const isSeries = pathname.includes("/series/");
+  const isInModal = isArticle || isSeries;
 
   useEffect(() => {
     if (isInModal) return;
@@ -18,5 +19,5 @@ export const useUrlEntryModal = () => {
     setUrlEntryModal(pathname);
   }, [pathname]);
 
-  return { isInModal, urlEntryModal };
+  return { isInModal };
 };

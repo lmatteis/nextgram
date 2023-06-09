@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useUrlEntryModal } from "../hooks/useUrlEntryModal";
+import { useEntryModalState } from "../hooks/useEntryModalState";
 
 export function CloseModal(props) {
-  const { urlEntryModal } = useUrlEntryModal();
+  const { urlEntryModal } = useEntryModalState();
 
   return <Link href={urlEntryModal || "/"}>{props.children}</Link>;
 }

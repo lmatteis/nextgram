@@ -10,8 +10,7 @@ export const useUrlEntryModal = () => {
   const { setUrlEntryModal } = useEntryModalState();
 
   const isArticle = pathname.includes("/article/");
-  const isSeries = pathname.includes("/series/");
-  const isInModal = isArticle || isSeries;
+  const isInModal = isArticle;
 
   useEffect(() => {
     if (isInModal) return;

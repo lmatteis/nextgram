@@ -13,7 +13,9 @@ export default function Layout(props) {
   return (
     <html>
       <body>
-        {props.children}
+        <div className="h-[200px] bg-green-600 overflow-auto">
+          {props.children}
+        </div>
         <ConditionalModal>{props.articleModal}</ConditionalModal>
       </body>
     </html>

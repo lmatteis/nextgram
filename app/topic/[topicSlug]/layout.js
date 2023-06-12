@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Layout(props) {
   return (
-    <div className="bg-purple-600 h-[200px] overflow-auto">
+    <>
       List of articles for topic: {props.params.topicSlug} <br />
       <Link href={`/topic/${props.params.topicSlug}/article/1`}>Article 1</Link>
       <br />
@@ -43,6 +43,6 @@ export default function Layout(props) {
       </Link>
       <br />
       {props.children}
-    </div>
+    </>
   );
 }

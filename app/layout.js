@@ -1,5 +1,6 @@
 import "./global.css";
 import { ConditionalModal } from "../components/ConditionalModal";
+import Link from "next/link";
 
 export const metadata = {
   title: "NextGram",

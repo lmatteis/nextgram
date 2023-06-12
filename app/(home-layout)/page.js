@@ -1,5 +1,5 @@
 import Link from "next/link";
 
-export default function Page(props) {
+export default function Home() {
   return null;
 }

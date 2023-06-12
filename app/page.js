@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Layout(props) {
+export default function Page() {
   return (
     <>
       List of topics: <br />

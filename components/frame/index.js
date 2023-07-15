@@ -13,10 +13,10 @@ export default function Photo({ photo }) {
       />
 
       <div className="bg-white p-4 px-6">
-        <h3>
-          <Link href="/photos/9">click me</Link>
+        <h3 className="text-blue-600 underline">
+          <Link href="/photos/8">go to photo id 8</Link>
         </h3>
-        <h3>
+        <h3 className="text-blue-600 underline">
           <Link href="/">close</Link>
         </h3>
         <h3>{photo.name}</h3>

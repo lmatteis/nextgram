@@ -1,4 +1,5 @@
 async function fetchData(id) {
+  await new Promise((resolve) => setTimeout(resolve, 5000));
   return "fetch async data for article id: " + id;
 }
 export default async function Page({ params }) {
